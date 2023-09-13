@@ -2,4 +2,13 @@
 
 Was ist Investchai?
 
-Ein TradingView-ähnliches Projekt ist eine Finanzdatenplattform, die Echtzeitdaten und Tools zur technischen Analyse bereitstellt, um Investoren und Händlern bei ihren Entscheidungen auf den Finanzmärkten zu helfen. Es ermöglicht die Anzeige von Charts,
+Ein TradingView-ähnliches Projekt ist eine Finanzdatenplattform, die Echtzeitdaten und Tools zur technischen Analyse bereitstellt, um Investoren und Händlern bei ihren Entscheidungen auf den Finanzmärkten zu helfen. Es ermöglicht die Anzeige von Charts.
+
+## Teammitglieder
+
+| Name                   | Email                    | Aufgabenbereich   |
+| ---------------------- | ------------------------ | ----------------- |
+| Bajramovic Amin, 4CHIF | BAJ20217@spengergasse.at | Technischer Leiter|
+| Gutic Filip, 4CHIF     | GUT20264@spengergasse.at | Projektleiter     |
+| Kahric Muhammed, 4CHIF | KAJ20288@spengergasse.at | Teammitglied      |
+
