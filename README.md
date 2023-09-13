@@ -10,5 +10,5 @@ Ein TradingView-ähnliches Projekt ist eine Finanzdatenplattform, die Echtzeitda
 | ---------------------- | ------------------------ | ----------------- |
 | Bajramovic Amin, 4CHIF | BAJ20217@spengergasse.at | Technischer Leiter|
 | Gutic Filip, 4CHIF     | GUT20264@spengergasse.at | Projektleiter     |
-| Kahric Muhammed, 4CHIF | KAJ20288@spengergasse.at | Teammitglied      |
+| Kaynak Samet, 4CHIF    | KAJ20288@spengergasse.at | Teammitglied      |
 
