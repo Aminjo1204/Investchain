@@ -1,6 +1,6 @@
 # Git Clone
 ```
-https://github.com/Aminjo1204/Investchain.git
+git clone https://github.com/Aminjo1204/Investchain.git
 ```
 
 # Investchain
