@@ -1,3 +1,8 @@
+#Git Clone
+```
+https://github.com/Aminjo1204/Investchain.git
+```
+
 # Investchain
 
 Was ist Investchain?
