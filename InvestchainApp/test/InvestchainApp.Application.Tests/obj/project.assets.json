@@ -7461,19 +7461,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anim\\.nuget\\packages\\": {}
+    "C:\\Users\\samet\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
       "projectName": "InvestchainApp.Application.Tests",
-      "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
-      "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\obj\\",
+      "projectPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
+      "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7481,14 +7486,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
-              "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
+            "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
+              "projectPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
             }
           }
         }
@@ -7540,7 +7546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

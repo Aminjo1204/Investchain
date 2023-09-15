@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InvestchainApp.Application.Model
+namespace InvestchainApp.Application.Infrastructure
 {
-    internal class Class1
+    public class InvestChainContext
     {
+
     }
+
 }
