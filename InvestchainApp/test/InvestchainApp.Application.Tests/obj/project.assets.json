@@ -97,7 +97,7 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.Data.Sqlite.Core/6.0.22": {
+      "Microsoft.Data.Sqlite.Core/6.0.23": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.2"
@@ -113,11 +113,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/6.0.22": {
+      "Microsoft.EntityFrameworkCore/6.0.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.22",
-          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.22",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.23",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.23",
           "Microsoft.Extensions.Caching.Memory": "6.0.1",
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
           "Microsoft.Extensions.Logging": "6.0.0",
@@ -138,7 +138,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Abstractions/6.0.23": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -151,7 +151,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.23": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -160,11 +160,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Proxies/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Proxies/6.0.23": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.4.1",
-          "Microsoft.EntityFrameworkCore": "6.0.22"
+          "Microsoft.EntityFrameworkCore": "6.0.23"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
@@ -177,10 +177,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Relational/6.0.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "Microsoft.EntityFrameworkCore": "6.0.23",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
@@ -194,10 +194,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Sqlite/6.0.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.22",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.23",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.2"
         },
         "compile": {
@@ -207,11 +207,11 @@
           "lib/net6.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.22": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.23": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "6.0.22",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Microsoft.Data.Sqlite.Core": "6.0.23",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.23",
           "Microsoft.Extensions.DependencyModel": "6.0.0"
         },
         "compile": {
@@ -2772,10 +2772,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Data.Sqlite.Core/6.0.22": {
-      "sha512": "gtIGHbGnRq/h4mFSJYr9BdMObvJV/a67nBubs50VjPDusQARtWJzeVTirDWsbL1qTvGzbbZCD7VE7+s2ixZfow==",
+    "Microsoft.Data.Sqlite.Core/6.0.23": {
+      "sha512": "cqWv73lQX6D5oe0RD1fHmoq4Rn9RaYtE3Zxe3g6zXsKdSgCvW+/Yi5bZP3sK3t7K2CohN2nlTkvY9DfQFaHTyA==",
       "type": "package",
-      "path": "microsoft.data.sqlite.core/6.0.22",
+      "path": "microsoft.data.sqlite.core/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2784,14 +2784,14 @@
         "lib/net6.0/Microsoft.Data.Sqlite.xml",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
-        "microsoft.data.sqlite.core.6.0.22.nupkg.sha512",
+        "microsoft.data.sqlite.core.6.0.23.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/6.0.22": {
-      "sha512": "vNe+y8ZsEf1CsfmfYttfKAz/IgCCtphgguvao0HWNJNdjZf9cabD288nZJ17b/WaQMWXhLwYAsofk8vNVkfTOA==",
+    "Microsoft.EntityFrameworkCore/6.0.23": {
+      "sha512": "e6CXCicgvyCzeESxfK/kAkJnevnodJCX9Au/m1PMmM4hrDAx36FRJLQJ7lKzIu9Hvd1LzvAtUOJm6D4aIL636Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/6.0.22",
+      "path": "microsoft.entityframeworkcore/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2799,90 +2799,90 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/6.0.22": {
-      "sha512": "3ycEYrtWoa4kv5mUECU2LNBbWiYh345b1uQLvg4pHCEICXoJZ8Sfu/2yGloKiMNgMdDc02gFYCRHxsqQNZpnWA==",
+    "Microsoft.EntityFrameworkCore.Abstractions/6.0.23": {
+      "sha512": "KG9qxolttA+pwwBFb6dxf7qkkDZQLLa3yc4S7Fl/CTy/p0OVjjrmgrrBWlbwBUu2npBELCFz22XK/PdMGJmOaw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/6.0.22",
+      "path": "microsoft.entityframeworkcore.abstractions/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/6.0.22": {
-      "sha512": "82SZfdrLe7bdDB8/3INV0UULvlUzsdHkrEYylDCrzFXRWHXG9eO5jJQjRHU8j9XkGIN+MSPgIlczBnqeDvB36A==",
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.23": {
+      "sha512": "v4G7tYmBK/GDNlFOKWvXJ0vt3e8LA/SZe/mKfDB4aN9V/7KsO7+tMSnQHALPB8Xu3PKZviC9kNWDosaIaMiRmw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/6.0.22",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Proxies/6.0.22": {
-      "sha512": "kZa78bRz8+yVe95eTAZfVj1VGQkhuWr2biiuI8nMMU+SDbW/c25RVq9sMxqiM7/MXCu670YbZlbFibVYlz6RHw==",
+    "Microsoft.EntityFrameworkCore.Proxies/6.0.23": {
+      "sha512": "X00oXRMF+uG3PGwjtrnG9SKewhmdWpDVWL8DeYmGI30YrmkBd5h53kL1siXxAWknpll9DhGvUYYueTygfcmSKg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.proxies/6.0.22",
+      "path": "microsoft.entityframeworkcore.proxies/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Proxies.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Proxies.xml",
-        "microsoft.entityframeworkcore.proxies.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
-      "sha512": "W7yfdEbEuS1OPPxU0EOA6haqI4uvzs7OwHKh81DiJFn3NFNP2ztSovkOzBDhTwHX0j+OySsAj3BEJhuzTVYIVw==",
+    "Microsoft.EntityFrameworkCore.Relational/6.0.23": {
+      "sha512": "TUbGpISUoEKYc7JDwgrjcsNiJTB+6dfhJrU/q16JB9ChWh/CyH17AAvCI4+sgrp0TzjWjkJwskMycvvJSsXd8Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/6.0.22",
+      "path": "microsoft.entityframeworkcore.relational/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Sqlite/6.0.22": {
-      "sha512": "EDKnYZtxq7P131xxLsEokda86WnFRiVAveLVAYR8kzyWl/UwTpf/RS2m2FrbH/U8vX3A+IQNpabtxcjtCUrY0g==",
+    "Microsoft.EntityFrameworkCore.Sqlite/6.0.23": {
+      "sha512": "nXoNNBSTh9nOMJxCxOz6LL7YaJSBQGF/DD/4rMhqdWf7f5sMdU0W6pDqVZfknTTClecKAI4cO3yk+86/Hdp6Xg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlite/6.0.22",
+      "path": "microsoft.entityframeworkcore.sqlite/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.sqlite.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlite.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.22": {
-      "sha512": "xSU77ORQgwlD+s5Cmlk9DzoSCu5oxlHLuQl+v5zAZ0Uv5yH17hp02TBfz3x9nBA+CrIsqaLjGEuyZmLDf/5ATw==",
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/6.0.23": {
+      "sha512": "TMNRIwWw6azmfs3O4MxhYLtc3OAXW0YIoNJxdgcAN3ESWQp6dJcUi4f1POELSQMlufBSKc59pxipP2aevD5S6Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlite.core/6.0.22",
+      "path": "microsoft.entityframeworkcore.sqlite.core/6.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.xml",
-        "microsoft.entityframeworkcore.sqlite.core.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlite.core.6.0.23.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
       ]
     },
@@ -7461,19 +7461,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anim\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
+      "projectUniqueName": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
       "projectName": "InvestchainApp.Application.Tests",
-      "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
-      "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\obj\\",
+      "projectPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7487,8 +7492,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
-              "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
+            "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
+              "projectPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
             }
           }
         }
@@ -7540,7 +7545,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
