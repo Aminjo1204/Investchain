@@ -6719,23 +6719,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\samet\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\InvestchainApp.Webapi.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\InvestchainApp.Webapi.csproj",
       "projectName": "InvestchainApp.Webapi",
-      "projectPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\InvestchainApp.Webapi.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\obj\\",
+      "projectPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\InvestchainApp.Webapi.csproj",
+      "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6751,8 +6751,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
-              "projectPath": "E:\\4CHIF\\InvestProjekt\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
+            "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
+              "projectPath": "C:\\Users\\samet\\OneDrive\\Desktop\\Samet Kaynak\\4CHIF\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
             }
           }
         }
@@ -6791,7 +6791,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,8 +6,7 @@ namespace InvestchainApp.Application.Model
 {
     public class Stocks
     {
-       
-
+    
         public Stocks(string symbol, string name, decimal price, DateTime lastUpdated)
         {
             Symbol = symbol;

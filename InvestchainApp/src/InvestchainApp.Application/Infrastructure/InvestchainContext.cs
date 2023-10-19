@@ -1,4 +1,5 @@
 ﻿using Bogus;
+using InvestchainApp.Application.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace InvestchainApp.Application.Infrastructure
         }
 
         public DbSet<Currency> Currencies => Set<Currency>();
+        public DbSet<Stocks> Stocks => Set<Stocks>();
+        public DbSet<Transaktion> Transaktions => Set<Transaktion>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -58,14 +61,36 @@ namespace InvestchainApp.Application.Infrastructure
 
             Currency[] currencies = new[]
             {
-                new Currency(name: "BTC"),
-                new Currency(name: "ETH"),
-                new Currency(name: "USDT"),
-                new Currency(name: "BNB"),
-            };
+        new Currency(name: "BTC"),
+        new Currency(name: "ETH"),
+        new Currency(name: "USDT"),
+        new Currency(name: "BNB"),
+    };
 
             await Currencies.AddRangeAsync(currencies);
+
+            // Seed-Daten für Transaktionen
+            Transaktion[] transactions = new[]
+            {
+        new Transaktion("User1", "AAPL", 10, 150.50m, DateTime.Now, Transaktion.TransactionType.Buy),
+        new Transaktion("User2", "GOOG", 5, 2800.75m, DateTime.Now, Transaktion.TransactionType.Buy),
+        // Weitere Transaktionsdaten hinzufügen
+    };
+
+            await Transaktions.AddRangeAsync(transactions);
+
+            // Seed-Daten für Aktien
+            Stocks[] stocks = new[]
+            {
+        new Stocks("AAPL", "Apple Inc.", 150.50m, DateTime.Now),
+        new Stocks("GOOG", "Alphabet Inc.", 2800.75m, DateTime.Now),
+        // Weitere Aktiendaten hinzufügen
+    };
+
+            await Stocks.AddRangeAsync(stocks);
+
             await SaveChangesAsync();
         }
+
     }
 }
