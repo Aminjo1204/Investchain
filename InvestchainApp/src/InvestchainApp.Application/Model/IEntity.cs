@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace InvestchainApp.Application.Model
 {
-    internal class Class1
+    public interface IEntity
     {
+        Guid Guid { get; }
+    }
+
+    public interface IEntity<Tkey> : IEntity where Tkey : struct
+    {
+        Tkey Id { get; }
     }
 }

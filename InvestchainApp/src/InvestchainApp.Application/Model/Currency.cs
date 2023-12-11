@@ -1,14 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using InvestchainApp.Application.Model;
+using System;
 
 namespace InvestchainApp.Application;
 
 [Index(nameof(Name), IsUnique = true)]
-public class Currency
+public class Currency : IEntity<int>
 {
-    public Currency(string name, decimal value)
+    public Currency(string name)
     {
         Name = name;
-        Value = value;
+    }
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    protected Currency()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    {
+
     }
 
     public int Id { get; private set; }
