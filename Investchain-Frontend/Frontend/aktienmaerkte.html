@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>InvestChain</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+    </head>  
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="images/InvestChain.png" />
+                    <h2><span>I</span>NVES<span>T</span>CHAIN</h2>
+                </div>
+
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="depot.html">
+                    <span class="material-icons-sharp">data_usage</span>
+                    <h3>Mein Depot</h3>
+                </a>
+
+                <a href="chart.html">
+                    <span class="material-icons-sharp">insert_chart</span>
+                    <h3>Aktienmarkt</h3>
+                </a>
+        
+                </a>
+
+            </div>
+        </aside>
+
+        <!------- end of aside ------->
+
+        <main>
+            <h1>APPLE</h1>
+            <div class="recent-orders">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright">
+                        <a href="https://de.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
+                    </div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                        {
+                            "symbol": "AAPL",
+                            "width": "100%",
+                            "locale": "de_DE",
+                            "colorTheme": "light",
+                            "isTransparent": false
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+
+            <div class="sales-analytics">
+                <h2>Wichtige Zahlen</h2>
+                <br>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js" async>
+                        {
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "largeChartUrl": "",
+                            "displayMode": "regular",
+                            "width": "100%",
+                            "height": "450",
+                            "symbol": "AAPL",
+                            "locale": "de_DE"
+                        }
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="recent-orders">
+                <h2>Chart</h2>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                        {
+                            "symbols": [
+                                [
+                                    "Apple Inc.",
+                                    "AAPL|1D"
+                                ]
+                            ],
+                            "chartOnly": false,
+                            "width": 900,
+                            "height": 500,
+                            "locale": "de_DE",
+                            "colorTheme": "light",
+                            "autosize": false,
+                            "showVolume": false,
+                            "showMA": false,
+                            "hideDateRanges": false,
+                            "hideMarketStatus": false,
+                            "hideSymbolLogo": false,
+                            "scalePosition": "right",
+                            "scaleMode": "Normal",
+                            "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                            "fontSize": "10",
+                            "noTimeScale": false,
+                            "valuesTracking": "1",
+                            "changeMode": "price-and-percent",
+                            "chartType": "area",
+                            "maLineColor": "#2962FF",
+                            "maLineWidth": 1,
+                            "maLength": 9,
+                            "lineWidth": 2,
+                            "lineType": 0,
+                            "dateFormat": "MMM dd, yyyy"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </main>
+
+        <!-----------end of main------->
+
+
+            <!------end of top---------->
+
+            <div class="recent-updates">
+                <h2>Übersicht Unternehmen</h2>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                        {
+                            "width": "100%",
+                            "height": "500",
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "symbol": "AAPL",
+                            "locale": "de_DE"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <!-------end of recent updates-------->
+
+            <div class="sales-analytics">
+                <h2>Analytics</h2>
+
+
+                <!-- TradingView Widget END -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://de.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "1m",
+                            "width": "100%",
+                            "isTransparent": false,
+                            "height": "450",
+                            "symbol": "AAPL",
+                            "showIntervalTabs": true,
+                            "locale": "de_DE",
+                            "colorTheme": "light"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+
+
+
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
