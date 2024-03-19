@@ -1,4 +1,4 @@
-namespace InvestchainApp.Application.Tests;
+namespace InvestChainApp.Application.Tests;
 
 public class UnitTest1
 {

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InvestchainApp.Application\InvestchainApp.Application.csproj" />
+    <ProjectReference Include="..\InvestChainApp.Application\InvestChainApp.Application.csproj" />
   </ItemGroup>
 
 </Project>

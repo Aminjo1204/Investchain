@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj": {}
+    "C:\\Github\\InvestChain\\InvestChainApp\\test\\InvestChainApp.Application.Tests\\InvestChainApp.Application.Tests.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
+    "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj",
-        "projectName": "InvestchainApp.Application",
-        "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj",
-        "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\obj\\",
+        "projectUniqueName": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "projectName": "InvestChainApp.Application",
+        "projectPath": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,6 +35,7 @@
           }
         },
         "warningProperties": {
+          "allWarningsAsErrors": true,
           "warnAsError": [
             "NU1605"
           ]
@@ -49,6 +54,10 @@
               "version": "[34.*, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[6.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.*, )"
             },
@@ -73,21 +82,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj": {
+    "C:\\Github\\InvestChain\\InvestChainApp\\test\\InvestChainApp.Application.Tests\\InvestChainApp.Application.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
-        "projectName": "InvestchainApp.Application.Tests",
-        "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\InvestchainApp.Application.Tests.csproj",
-        "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Investchain\\InvestchainApp\\test\\InvestchainApp.Application.Tests\\obj\\",
+        "projectUniqueName": "C:\\Github\\InvestChain\\InvestChainApp\\test\\InvestChainApp.Application.Tests\\InvestChainApp.Application.Tests.csproj",
+        "projectName": "InvestChainApp.Application.Tests",
+        "projectPath": "C:\\Github\\InvestChain\\InvestChainApp\\test\\InvestChainApp.Application.Tests\\InvestChainApp.Application.Tests.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Github\\InvestChain\\InvestChainApp\\test\\InvestChainApp.Application.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +114,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj": {
-                "projectPath": "C:\\GitHub\\Investchain\\InvestchainApp\\src\\InvestchainApp.Application\\InvestchainApp.Application.csproj"
+              "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
+                "projectPath": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj"
               }
             }
           }
@@ -119,13 +132,13 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.5.0, )"
+              "version": "[17.3.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[3.1.2, )"
             },
             "xunit": {
               "target": "Package",
@@ -154,7 +167,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
