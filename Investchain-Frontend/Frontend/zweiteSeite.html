@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    input[type="number"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separate Seite</title>
+</head>
+
+<body>
+    <p id="cookieValue"></p> <!-- Element zur Anzeige des Cookie-Werts -->
+    <p id="timestampValue"></p> <!-- Element zur Anzeige des Timestamps -->
+    <p id="usernameValue"></p> <!-- Element zur Anzeige des Usernames -->
+
+    <script>
+        // Funktion zum Auslesen der Cookie-Werte
+        function readCookie(name) {
+            const cookies = document.cookie.split(";"); // Alle Cookies aufteilen
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(name + "=")) {
+                    return cookie.substring(name.length + 1); // Wert des Cookies extrahieren
+                }
+            }
+            return null; // Cookie nicht gefunden
+        }
+
+        // Beim Laden der Webseite die Cookie-Werte auslesen und anzeigen
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const savedValue = readCookie("kapital");
+            const savedTimestamp = readCookie("timestamp");
+            const savedName = readCookie("username");
+            console.log("Kapital:", savedValue);
+            console.log("Letzter Besuch:", savedTimestamp);
+            console.log("Eingeloggt als:", savedName);
+            document.querySelector("#cookieValue").textContent = "Kapital: " + savedValue;
+            document.querySelector("#timestampValue").textContent = "Letzter Besuch: " + savedTimestamp;
+            document.querySelector("#usernameValue").textContent = "Eingeloggt als: " + savedName;
+        });
+    </script>
+</body>
+
+</html>

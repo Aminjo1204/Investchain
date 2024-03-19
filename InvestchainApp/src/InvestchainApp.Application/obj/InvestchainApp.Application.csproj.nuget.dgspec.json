@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {}
+    "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {}
   },
   "projects": {
-    "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
+    "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "projectUniqueName": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
         "projectName": "InvestChainApp.Application",
-        "projectPath": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Github\\InvestChain\\InvestChainApp\\src\\InvestChainApp.Application\\obj\\",
+        "projectPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
