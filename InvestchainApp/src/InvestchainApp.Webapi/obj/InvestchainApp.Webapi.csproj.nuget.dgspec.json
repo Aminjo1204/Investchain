@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj": {}
+    "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
+    "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
         "projectName": "InvestChainApp.Application",
-        "projectPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
-        "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\obj\\",
+        "projectPath": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,17 +92,21 @@
         }
       }
     },
-    "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj": {
+    "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj",
         "projectName": "InvestChainApp.Webapi",
-        "projectPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj",
-        "packagesPath": "C:\\Users\\Anim\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Webapi\\obj\\",
+        "projectPath": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Webapi\\InvestChainApp.Webapi.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Webapi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,14 +114,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
-                "projectPath": "C:\\GitHub\\Investchain\\InvestChainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj"
+              "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj": {
+                "projectPath": "C:\\Users\\samet\\OneDrive - HTL Spengergasse\\Desktop\\Samet Kaynak\\4CHIF\\PRE\\Investchain\\InvestchainApp\\src\\InvestChainApp.Application\\InvestChainApp.Application.csproj"
               }
             }
           }
