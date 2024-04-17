@@ -26,15 +26,18 @@
     <div class="container"> 
         <aside>
             <div class="top">
-                <div class="logo">
-                    <img src="images/InvestChain.png" />
-                    <h2><span>I</span>NVES<span>T</span>CHAIN</h2>
-                </div>
+                <a href="aktienmaerkte.html">
 
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
+                    <div class="logo">
+                        <img src="images/InvestChain.png" />
+                        <h2><span>I</span>NVES<span>T</span>CHAIN</h2>
+                    </div>
+                    
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <div class="sidebar">
                 <a href="dashboard.html" class="active">
@@ -53,6 +56,14 @@
                     <h3>Aktienmarkt</h3>
                 </a>
 
+               
+                
+                <a href="login.html">
+                    <span class="material-icons-sharp">
+                       login</span>
+                    <h3>Login</h3>
+                </a>
+
             </div>
         </aside>
 
@@ -61,6 +72,7 @@
 
         <main>
             <h1>Dashboard</h1>
+            <h2 id="username"></h2>
             <div class="recent-orders">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
@@ -323,3 +335,18 @@
 }
 
 </style>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+        
+        async function fetchUserData() {
+            try {
+                const guid = sessionStorage.getItem('userGuid');
+                const response = await axios.get(`https://localhost:7137/api/user/${guid}`);
+                // Hier wird der Benutzername in das HTML-Element mit der ID "username" eingefügt
+                document.getElementById("username").textContent = "Willkommen zurück, " + response.data.username;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", fetchUserData);
+</script>
