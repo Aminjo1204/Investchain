@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
 
     <!--Stylesheet-->
-
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -21,17 +20,16 @@
         <aside>
             <div class="top">
                 <a href="aktienmaerkte.html">
-
                     <div class="logo">
                         <img src="images/InvestChain.png" />
                         <h2><span>I</span>NVES<span>T</span>CHAIN</h2>
                     </div>
-                    
+
                     <div class="close" id="close-btn">
                         <span class="material-icons-sharp">close</span>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
             <div class="sidebar">
                 <a href="dashboard.html">
@@ -44,46 +42,55 @@
                     <h3>Mein Depot</h3>
                 </a>
 
-
                 <a href="chart.html">
                     <span class="material-icons-sharp">insert_chart</span>
                     <h3>Aktienmarkt</h3>
                 </a>
 
-
-                <a href="#">
-                    <span class="material-icons-sharp">receipt_long</span>
-                    <h3>Orders</h3>
-                </a>
-                
                 <a href="login.html" class="active">
-                    <span class="material-icons-sharp">
-                       login</span>
+                    <span class="material-icons-sharp">login</span>
                     <h3>Login</h3>
                 </a>
-
-
             </div>
         </aside>
 
         <div class="login-container">
             <h2>Login</h2>
+            <hr>
             <h3 id="username"></h3>
-            <form action="#">
+            <form onsubmit="login(event)">
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required v-model="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required v-model="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
-                <button onclick="login()" type="submit" >Login</button>
-                <button onclick="logout()" type="submit" >Logout</button>
+                <button type="submit">Login</button>
+                <button type="button" onclick="logout()">Logout</button>
+            </form>
+            <hr>
+            <h2>Register</h2>
+            <hr>
+            <form onsubmit="register(event)">
+                <div class="form-group">
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-username">Username:</label>
+                    <input type="text" id="reg-username" name="reg-username" required>
+                </div>
+                <button type="submit">Register</button>
             </form>
         </div>
-
     </div>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -113,7 +120,8 @@
         }
 
         input[type="email"],
-        input[type="password"] {
+        input[type="password"],
+        input[type="text"] {
             width: 100%;
             padding: 10px;
             border-radius: 5px;
@@ -133,58 +141,109 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        hr {
+            margin: 20px 0;
+        }
     </style>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
-        async function login() {
-            console.log(email.value);
-            console.log("Login with email:", email.value, "and password:", password.value);
+        async function login(event) {
+            event.preventDefault();
             try {
-                // Senden der Anmeldeinformationen an den Server
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                console.log("Sending login request:", { email, password });
+
                 const response = await axios.post("https://localhost:7137/api/User/login", {
-                    email: email.value,
-                    password: password.value
+                    email,
+                    password
                 });
 
-                // Überprüfen, ob die Anmeldeinformationen korrekt waren
+                console.log("Login response:", response);
+
                 if (response.status === 200) {
-                    const userGuid = await getUserGuidByEmail(email.value);
+                    const userGuid = await getUserGuidByEmail(email);
                     if (userGuid) {
                         sessionStorage.setItem("userGuid", userGuid);
                         fetchUserData();
                         alert("Login success!");
-                        window.location.href ="/Investchain-Frontend/Frontend/dashboard.html";
+                        window.location.href = "/Investchain-Frontend/Frontend/dashboard.html";
                     }
                 } else {
                     console.error("Login request failed with status:", response.status);
                     alert("Login failed. Please try again later.");
                 }
             } catch (error) {
-                console.error(error);
-                //alert("Login failed.");
+                console.error("Login error:", error);
+                if (error.response) {
+                    console.error("Error response data:", error.response.data);
+                    alert(`Login failed: ${JSON.stringify(error.response.data)}`);
+                } else {
+                    alert("Login failed.");
+                }
             }
         }
-function logout(){
-    sessionStorage.removeItem('userGuid');
-    document.getElementById("username").textContent = null;
-    alert("Logout Success");
-}
+
+        function logout() {
+            sessionStorage.removeItem('userGuid');
+            document.getElementById("username").textContent = null;
+            alert("Logout Success");
+        }
+
+        async function register(event) {
+            event.preventDefault();
+            try {
+                const email = document.getElementById('reg-email').value;
+                const initialPassword = document.getElementById('reg-password').value;
+                const username = document.getElementById('reg-username').value;
+
+                console.log("Sending registration request:", { mail: email, initialPassword, username });
+
+                const response = await axios.post("https://localhost:7137/api/User/register", {
+                    mail: email,
+                    initialPassword,
+                    username
+                });
+
+                console.log("Registration response:", response);
+                if (response.status === 200) {
+                    alert("Registration successful!");
+                    window.location.href = "/Investchain-Frontend/Frontend/login.html";
+                }
+                else if (response.status === 201) {
+                    alert("Registration successful!");
+                    window.location.href = "/Investchain-Frontend/Frontend/login.html";
+                } else {
+                    console.error("Registration request failed with status:", response.status);
+                    alert("Registration failed. Please try again later.");
+                }
+            } catch (error) {
+                console.error("Registration error:", error);
+                if (error.response) {
+                    console.error("Error response data:", error.response.data);
+                    alert(`Registration failed: ${JSON.stringify(error.response.data)}`);
+                } else {
+                    alert("Registration failed.");
+                }
+            }
+        }
 
         async function getUserGuidByEmail(email) {
             try {
-                // Abrufen aller Benutzerdaten vom Server
                 const response = await axios.get("https://localhost:7137/api/User");
 
-                // Überprüfen, ob die Benutzerliste in der Antwort vorhanden ist
+                console.log("Get user GUID response:", response);
+
                 if (Array.isArray(response.data)) {
-                    // Durchsuchen der Benutzerliste, um die GUID des Benutzers mit der angegebenen E-Mail-Adresse zu finden
                     for (const user of response.data) {
                         if (user.mail === email) {
                             return user.guid;
                         }
                     }
-                    // Wenn die E-Mail-Adresse nicht gefunden wurde
                     console.error("User not found with email:", email);
                     return null;
                 } else {
@@ -192,7 +251,7 @@ function logout(){
                     return null;
                 }
             } catch (error) {
-                console.error(error);
+                console.error("Error fetching user GUID:", error);
                 return null;
             }
         }
@@ -200,15 +259,14 @@ function logout(){
         async function fetchUserData() {
             try {
                 const guid = sessionStorage.getItem('userGuid');
-                const response = await axios.get(`https://localhost:7137/api/user/${guid}`);
-                // Hier wird der Benutzername in das HTML-Element mit der ID "username" eingefügt
+                const response = await axios.get(`https://localhost:7137/api/User/${guid}`);
+                console.log("Fetch user data response:", response);
                 document.getElementById("username").textContent = response.data.username;
             } catch (error) {
-                console.error(error);
+                console.error("Error fetching user data:", error);
             }
         }
 
-        // Funktion zum Abrufen der Benutzerdaten wird aufgerufen, wenn das Dokument geladen ist
         document.addEventListener("DOMContentLoaded", fetchUserData);
     </script>
 </body>
